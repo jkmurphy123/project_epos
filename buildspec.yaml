@@ -1,9 +1,13 @@
-version: 0.2
+version: 0.1
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 10  
   build:
     commands:
-        - echo Nothing yet
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
         
 artifacts:
   files:
